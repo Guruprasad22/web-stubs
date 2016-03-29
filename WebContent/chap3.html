@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Jump for Joy</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+		<script>
+		
+		$(function() {
+		$("#frm1").submit(function(event) {
+				event.preventDefault()
+				console.log("tstmessaje");
+				$("#container").html("well well well..");
+			});
+		});
+		
+		</script> 
+	</head> 
+	<body>
+		<div id="container" >"well" </div>
+		<form id="frm1">
+			<label for="email" >email</label>
+			<input type="text" id="email" /> 		
+			<input type="submit" id="sub1" />
+		
+		</form>
+		
+	</body>
+</html>
